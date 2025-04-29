@@ -12,30 +12,19 @@ class Numberspage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text("data"), backgroundColor: Colors.blue),
-      body: Container(
-        color: const Color.fromARGB(255, 187, 129, 3),
-        height: 70,
+      body: Column(
+        children: [
+          Container(
+            color: const Color.fromARGB(255, 187, 129, 3),
+            height: 70,
 
-        child: Row(
-          children: [
-            Container(color: Colors.white, child: Image.asset(one.imag)),
-            Padding(
-              padding: const EdgeInsets.only(left: 8),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text(one.gpname, style: TextStyle(fontSize: 18)),
-                  Text(one.enname, style: TextStyle(fontSize: 18)),
-                ],
-              ),
-            ),
-            Spacer(flex: 1),
-            Padding(
-              padding: const EdgeInsets.only(right: 6),
-              child: Icon(Icons.play_arrow, color: Colors.white),
-            ),
-          ],
-        ),
+            child: Row(children: [
+                
+              ],
+           
+          ),
+          ),
+        ],
       ),
     );
   }
