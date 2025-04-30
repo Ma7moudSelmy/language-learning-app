@@ -6,25 +6,27 @@ class Items extends StatelessWidget {
   final Nambers number;
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [
-        Container(color: Colors.white, child: Image.asset(number.imag)),
-        Padding(
-          padding: const EdgeInsets.only(left: 8),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text(number.gpname, style: TextStyle(fontSize: 18)),
-              Text(number.enname, style: TextStyle(fontSize: 18)),
-            ],
+    return Container(
+      child: Row(
+        children: [
+          Container(color: Colors.white, child: Image.asset(number.imag)),
+          Padding(
+            padding: const EdgeInsets.only(left: 8),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(number.gpname, style: TextStyle(fontSize: 18)),
+                Text(number.enname, style: TextStyle(fontSize: 18)),
+              ],
+            ),
           ),
-        ),
-        Spacer(flex: 1),
-        Padding(
-          padding: const EdgeInsets.only(right: 6),
-          child: Icon(Icons.play_arrow, color: Colors.white),
-        ),
-      ],
+          Spacer(flex: 1),
+          Padding(
+            padding: const EdgeInsets.only(right: 6),
+            child: Icon(Icons.play_arrow, color: Colors.white),
+          ),
+        ],
+      ),
     );
   }
 }

@@ -41,7 +41,7 @@ class Homepage extends StatelessWidget {
       body: Column(
         children: [
           Cat1(
-            text: "mahmoud",
+            text: "Mahmoud",
             color: Colors.blue,
             onTap: () {
               Navigator.push(
