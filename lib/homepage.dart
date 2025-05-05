@@ -53,7 +53,7 @@ class Homepage extends StatelessWidget {
             },
           ),
           Cat1(
-            text: "NUMBERS",
+            text: "Mahmoud",
             color: Color.fromARGB(255, 3, 89, 160),
             onTap: () {
               print("mas");
@@ -67,7 +67,7 @@ class Homepage extends StatelessWidget {
             },
           ),
           Cat1(
-            text: "MOTHER",
+            text: "Mahmoud",
             color: Color.fromARGB(255, 243, 33, 103),
             onTap: () {},
           ),
